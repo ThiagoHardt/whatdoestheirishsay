@@ -1,0 +1,21 @@
+/*-------------------Need font family and weights-------------------*/
+
+
+
+
+/*-------------------Header-------------------*/
+
+.header-bg {
+    background-color: #283618;
+}
+
+.header-title {
+    padding: 15px;
+    color: #FFF;
+    margin: 0;
+    /*--font weight property here to make title stand out, h1 tags too big.--*/
+}
+
+.img-title-alignment {
+    margin-bottom: 15px;
+}
