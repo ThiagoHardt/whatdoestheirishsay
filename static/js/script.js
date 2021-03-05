@@ -1,8 +1,12 @@
+// Declarations
 // set minutes
 var mins = 2;
 // calculate the seconds 
 var secs = mins * 60;
+// Functions
 
+// Counting function built in js countdown
+// goDown is going down 1s as 1000 its 1s in js 
 function countdown() {
     setTimeout('goDown()',1000);
 }
@@ -33,3 +37,4 @@ function getseconds() {
     // take mins remaining (as seconds) away from total seconds remaining
     return secs-Math.round(mins *60);
 }
+
