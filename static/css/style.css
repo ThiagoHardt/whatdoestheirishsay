@@ -1,0 +1,31 @@
+/*-------------------Need font family and weights-------------------*/
+
+
+
+
+/*-------------------Header-------------------*/
+
+.header-bg {
+    background-color: #283618;
+}
+
+.header-title {
+    color: #FFF;
+    margin: 0;
+    /*--font weight property here to make title stand out, h1 tags too big.--*/
+}
+
+.img-title-alignment {
+    margin-bottom: 16px;
+}
+
+/*-------------------Navigation-------------------*/
+
+.nav-link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-link:hover {
+    color: #DDA15E;
+}
