@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
       type="text/css"
     />
     <title>What Does The Irish Say?</title>
-</head>
-<body>
-<!--------------------------Header & Navigation-------------------------->
-<nav class="navbar navbar-light header-bg">
-    <div class="container-fluid">
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark header-bg">
+      <div class="container">
         <a class="navbar-brand" href="#">
-            <!--SVG Image Required & alligned centered with title-->
-            <img src="#" alt="" width="30" height="30" class="d-inline-block img-title-alignment">
-            <h1 class="header-title d-inline-block">What does the Irish say?</h1>
+          <img
+            src="{{ url_for('static', filename='media/icons/017-leprechaun.svg') }}"
+            alt=""
+            width="30"
+          />
         </a>
-        <!--Links will need fixing backend program-->
-        <ul class="nav justify-content-end">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Rules</a>
+              <a class="nav-link" href="#">Rules</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+              <a class="nav-link" href="#">Leaderboard</a>
             </li>
-        </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Landing -->
+    <div
+      class="container d-flex justify-content-center mt-3 header-bg w-75 p-2 shadow-sm rounded container-drinks"
+    >
+      <img
+        src="{{ url_for('static', filename='media/icons/027-beer-1.svg') }}"
+        alt="Beer Buddy"
+        width="50px"
+      />
+      <h3 class="my-auto text-light m-3 text-center">99999 Drinks consumed</h3>
+      <img
+        src="{{ url_for('static', filename='media/icons/037-mug.svg') }}"
+        alt="Beer Buddy"
+        width="50px"
+      />
     </div>
-</nav>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+    <div class="container">
+      <div class="card card-game shadow-sm rounded mx-auto mt-3">
+        <div class="card-body">
+          <div class="container-fluid mb-5">
+            <h1 class="display-3 text-center mb-5">What does the Irish say?</h1>
+            <img
+              src="{{ url_for('static', filename='media/icons/017-leprechaun.svg') }}"
+              alt="Beer Buddy"
+              class="mx-auto d-block w-25"
+            />
+          </div>
+          <div class="row mt-3 justify-content-center mb-2"></div>
+          <button class="btn btn-large btn-success d-flex mx-auto m-2">
+            PLAY
+          </button>
+          <button class="btn btn-large btn-danger d-flex mx-auto m-2">
+            RULES
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+  </body>
 </html>
