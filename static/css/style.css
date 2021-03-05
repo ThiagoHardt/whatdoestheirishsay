@@ -40,3 +40,19 @@
 .card-game {
     max-width: 700px;
 }
+
+/*-------------------Leaderboard-------------------*/
+
+.ld-who {
+    padding: 15px;
+}
+
+.ld-score {
+    padding-bottom: 45px;
+}
+
+/*-------------------Custom Button Props.-------------------*/
+
+.btn-extra-large {
+    padding: 12px 24px;
+}
