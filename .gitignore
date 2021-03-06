@@ -5,3 +5,4 @@ env.py
 __pycache__/
 *.py[cod]
 .vscode/launch.json
+google-credentials.json

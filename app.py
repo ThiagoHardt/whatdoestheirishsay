@@ -13,8 +13,7 @@ app = Flask(__name__)
 app.config["MONGODB_NAME"] = os.environ.get("MONGODB_NAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
-app.secret_key = os.environ.get("GOOGLE_CREDENTIALS")
-app.secret_key = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google-credentials.json"
 
 
 mongo = PyMongo(app)
