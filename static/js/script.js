@@ -44,16 +44,37 @@ function getAnswer(btn, translatedWord) {
 }
 
 const checkWord = (word, translatedWord) => {
+    let guessContainer = document.getElementById("guess-container");
+    let winContainer = document.getElementById("win-container");
+    let loseContainer = document.getElementById("lose-container");
+
   if (word === translatedWord) {
     //If matches the word
     //TODO hides all the text and shows pot of gold svg with a winner message
-    let container = document.getElementById("word-container");
-    container.style.display = "none";
-
-    console.log("you win");
+    guessContainer.classList = "hide"
+    winContainer.classList = ""
+    loseContainer.classList = "hide"
+    setTimeout(() => {
+        window.location.reload()
+    }, 3000);
+    
   } else {
     //if wrong answer
     //TODO hide all text and show a drink svg with a loser message
-    console.log("you lose");
+    guessContainer.classList = "hide"
+    winContainer.classList = "hide"
+    loseContainer.classList = ""
+        setTimeout(() => {
+        window.location.reload()
+    }, 3000);
   }
 };
+
+const hideContainer = (container, hide) => {
+    let container = document.getElementById(`${container}-container`);
+    if(hide){
+       container.style.display = "none"
+   }else{
+       container.style.display = "block"
+   }
+}
