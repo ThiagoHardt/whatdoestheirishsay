@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
       type="text/css"
     />
     <title>What Does The Irish Say?</title>
-</head>
-<body>
-<!--------------------------Header & Navigation-------------------------->
-<nav class="navbar navbar-light header-bg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <!--SVG Image Required & alligned centered with title-->
-            <img src="#" alt="" width="30" height="30" class="d-inline-block img-title-alignment">
-            <h1 class="header-title d-inline-block">What does the Irish say?</h1>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark header-bg">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+          <img
+            src="{{ url_for('static', filename='media/icons/017-leprechaun.svg') }}"
+            width="30"
+          />
         </a>
-        <ul class="nav justify-content-end">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="{{ url_for('index') }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Rules</a>
+              <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="leaderboard.html">Leaderboard</a>
+              <a class="nav-link active" aria-current="page" href="{{ url_for('leaderboard') }}">Leaderboard</a>
             </li>
-        </ul>
-    </div>
-</nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+    
+    <!-- Leaderboard -->
+    <div
+      class="container d-flex justify-content-center mt-3 header-bg w-75 p-2 shadow-sm rounded container-drinks"
+    >
+      <img
+        src="{{ url_for('static', filename='media/icons/029-hat-1.svg') }}"
+        alt="Money Hat"
+        width="50px"
+      />
+      <h3 class="my-auto text-light m-3 text-center">Leaderboard</h3>
+      <img
+        src="{{ url_for('static', filename='media/icons/032-medal.svg') }}"
+        alt="Medal"
+        width="50px"
+      />
+    </div>
+    {% block content %}
+    <div class="container">
+      <div class="card card-game shadow-sm rounded mx-auto mt-3">
+        <div class="card-body">
+          <div class="container-fluid mb-5">
+            <h2 class="display-5 text-center mb-5 header-bg rounded text-light ld-who">Who says it's easy being Irish?</h2>
+          </div>
+          <div class="row mt-3 mb-2 text-center">
+              <div>
+                  <!--LeaderBoard Data Here, placeholder for now.-->
+                  <ol class="ld-score list-group list-group-flush">
+                      <li class="list-group-item">Player
+                          <!--Spans represent the score that players achieved-->
+                          <span class="badge header-bg rounded-pill">14</span>
+                      </li>
+                      <li class="list-group-item">Player with longer name
+                          <span class="badge header-bg rounded-pill">9</span>
+                      </li>
+                      <li class="list-group-item">Player
+                          <span class="badge header-bg rounded-pill">7</span>
+                      </li>
+                      <li class="list-group-item">Player with longer name
+                          <span class="badge header-bg rounded-pill">3</span>
+                      </li>
+                  </ol>
+              </div>
+            <div class="col text-center">
+              <a
+                href="{{ url_for('play') }}"
+                class="btn btn-extra-large btn-success"
+              >
+                PLAY AGAIN?
+              </a>
+              <div class="row mt-3 mb-2 text-center">
+                <div class="col text-center">
+                  <a href="{{ url_for('rules') }}" class="btn btn-large btn-danger"> RULES </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {%endblock%}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+  </body>
 </html>
