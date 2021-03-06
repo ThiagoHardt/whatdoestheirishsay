@@ -2,27 +2,32 @@
 <div class="container">
   <div class="card card-game shadow-sm rounded mx-auto mt-3">
     <div class="card-body">
-      <div class="container-fluid mb-2">
-        <img
-          src="{{ url_for('static', filename='media/icons/017-leprechaun.svg') }}"
-          alt="Beer Buddy"
-          class="mx-auto d-block w-25"
-        />
-        <h3 class="text-center mt-3">The Irish say:</h3>
-      </div>
-      <div class="row mb-2 text-center">
-        <div class="col text-center">
-          <p class="fs-1 fst-italic">{{translatedWord.translatedText}}</p>
+      <div id="word-container">
+        <div class="container-fluid mb-2">
+          <img
+            src="{{ url_for('static', filename='media/icons/017-leprechaun.svg') }}"
+            alt="Beer Buddy"
+            class="mx-auto d-block w-25"
+          />
+          <h3 class="text-center mt-3">The Irish say:</h3>
         </div>
-        <h3 class="text-center mt-3">What does the Irish say?</h3>
+        <div class="row mb-2 text-center">
+          <div class="col text-center">
+            <p class="fs-1 fst-italic" id="irishWord" name="irishWord">
+              {{translatedWord.translatedText}}
+            </p>
+          </div>
+          <h3 class="text-center">What does the Irish say?</h3>
+        </div>
       </div>
-      <form>
-        {% for word in randomWordsList%}
-        <button
+      <form id="questionForm" name="questionForm">
+        {% for word in randomWordsList %}
+        <a
           class="btn btn-large btn-warning d-block m-2 mx-auto btn-choices"
+          onclick="getAnswer(this, {{ translatedWord }})"
         >
           {{word}}
-        </button>
+        </a>
         {%endfor%}
       </form>
     </div>
