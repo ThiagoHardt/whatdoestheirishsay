@@ -12,23 +12,18 @@
       </div>
       <div class="row mb-2 text-center">
         <div class="col text-center">
-          <p class="fs-1 fst-italic">Failte</p>
+          <p class="fs-1 fst-italic">{{translatedWord.translatedText}}</p>
         </div>
         <h3 class="text-center mt-3">What does the Irish say?</h3>
       </div>
       <form>
-            <button class="btn btn-large btn-warning d-block m-2 mx-auto">
-              Hello
-            </button>
-            <button class="btn btn-large btn-warning d-block m-2 mx-auto">
-              Welcome
-            </button>
-            <button class="btn btn-large btn-warning d-block m-2 mx-auto">
-              Beer
-            </button>
-            <button class="btn btn-large btn-warning d-block m-2 mx-auto">
-              Woman
-            </button>
+        {% for word in randomWordsList%}
+        <button
+          class="btn btn-large btn-warning d-block m-2 mx-auto btn-choices"
+        >
+          {{word}}
+        </button>
+        {%endfor%}
       </form>
     </div>
   </div>
