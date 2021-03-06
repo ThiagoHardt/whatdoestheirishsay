@@ -64,3 +64,17 @@
 .hide {
     display: none;
 }
+
+/*-------------------Footer-------------------*/
+
+.footer-size {
+    padding: 10px;
+}
+
+.copyright {
+    float: left;
+}
+
+.credits {
+    float: right;
+}
