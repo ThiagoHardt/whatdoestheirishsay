@@ -1,9 +1,13 @@
 /*-------------------Need font family and weights-------------------*/
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
 #wrong, #right {
     font-size: 3rem;
     font-weight: bold;
-}
 
 
 /*-------------------Header-------------------*/
@@ -80,14 +84,20 @@
 
 /*-------------------Footer-------------------*/
 
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer a:hover {
+    color: #DDA15E;
+}
+
 .footer-size {
     padding: 10px;
-}
-
-.copyright {
-    float: left;
-}
-
-.credits {
-    float: right;
+    text-align: center;
 }
