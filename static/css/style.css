@@ -10,6 +10,14 @@ body {
     font-weight: bold;
 }
 
+a:hover {
+    color: #fd7e14;
+    transition: ease-in-out 0.3s;
+}
+
+a {
+    color: #148474;
+}
 
 /*-------------------Header-------------------*/
 
