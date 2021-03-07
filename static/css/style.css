@@ -1,12 +1,13 @@
 /*-------------------Need font family and weights-------------------*/
 
-/*-------------------Body-------------------*/
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
+
+#wrong, #right {
+    font-size: 3rem;
+    font-weight: bold;
 
 
 /*-------------------Header-------------------*/
@@ -55,6 +56,16 @@ body {
 
 .ld-score {
     padding-bottom: 45px;
+}
+
+/*-------------------Rules Page-------------------*/
+
+.bullet-point-center {
+    list-style-position: inside;
+}
+
+.bullet-point-center li {
+    padding-bottom: 10px;
 }
 
 /*-------------------Custom Button Props.-------------------*/
