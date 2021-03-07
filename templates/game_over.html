@@ -1,0 +1,60 @@
+{% extends 'index.html' %} {% block content %}
+<div class="container">
+  <div class="card card-game shadow-sm rounded mx-auto mt-3">
+    <div class="card-body">
+      <!-- ENDGAME CONTAINER -->
+      <div id="endgame-container">
+        <div class="container-fluid mb-2">
+          <div class="text-center">
+            <img
+              src="{{ url_for('static', filename='media/icons/016-trumpet-flopped.svg') }}"
+              alt="Beer Buddy"
+              class="w-25"
+            />
+            <img
+              src="{{ url_for('static', filename='media/icons/044-gold-pot.svg') }}"
+              alt="Beer Buddy"
+              class="w-25"
+            />
+            <img
+              src="{{ url_for('static', filename='media/icons/016-trumpet.svg') }}"
+              alt="Beer Buddy"
+              class="w-25"
+            />
+          </div>
+          <h3 class="text-center mt-4 display-2">GAME OVER</h3>
+          <div class="text-center mb-5 mt-5">
+            <div class="d-inline m-2">
+              <img
+                src="{{ url_for('static', filename='media/icons/003-gold.svg') }}"
+                alt="Beer Buddy"
+                style="height: 50px"
+              />
+              <h2 class="d-inline align-middle" id="right"></h2>
+            </div>
+            <div class="d-inline m-2">
+              <img
+                src="{{ url_for('static', filename='media/icons/037-mug.svg') }}"
+                alt="Beer Buddy"
+                style="height: 50px"
+              />
+              <h2 class="d-inline align-middle" id="wrong"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2 text-center">
+          <div class="col text-center">
+            <a
+              href="{{ url_for('play') }}"
+              class="btn btn-extra-large btn-success"
+              onclick="clickReset()"
+            >
+              PLAY AGAIN?
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
