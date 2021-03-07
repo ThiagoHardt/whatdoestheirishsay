@@ -51,6 +51,13 @@
     padding-bottom: 45px;
 }
 
+/*-----------------About Page-------------*/
+.box {
+    list-style-type: none;
+}
+.large {
+    font-size: 40px;
+}
 /*-------------------Custom Button Props.-------------------*/
 
 .btn-extra-large {
