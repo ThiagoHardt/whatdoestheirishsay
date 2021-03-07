@@ -172,7 +172,19 @@ ___
 ## Testing
 ### Testing User Stories 
 
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
+The project was tested in the following way:
+1. Home Page:
+  First of all, I checked all the options on the menu bar by clicking on them one by one.
+  Next, I tested both buttons ( play and rules) and their responsiveness.
+2. Play section:
+  I played several complete rounds to check whether the game mechanics work properly.
+3. Rules page:
+  I clicked on the menu option that should redirect the user to the rules page and then, also clicked on this section's button that should redirect to the game.
+4. About page:
+  Finally, I selected the about section and tested the navigation icons to the repository and social media: Github, Linkedin.
+  
+I also took the chance to repeat all the above mentioned processes on different devices ( Smartphone, Chromebook and PC ) and several browsers, such as: Mozzila Firefox, Internet Explorer, Chrome and Opera.
+
 
 ### Known Issues
 
