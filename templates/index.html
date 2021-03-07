@@ -53,12 +53,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
+              <a class="nav-link" href="{{ url_for('play') }}">Play</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('leaderboard') }}"
-                >Leaderboard</a
-              >
+              <a class="nav-link" href="{{ url_for('rules') }}">Rules</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('about') }}">About</a>
@@ -69,23 +67,8 @@
     </nav>
 
     <!-- Landing -->
-    <div
-      class="container d-flex justify-content-center mt-3 header-bg w-75 p-2 shadow-sm rounded container-drinks"
-    >
-      <img
-        src="{{ url_for('static', filename='media/icons/027-beer-1.svg') }}"
-        alt="Beer Buddy"
-        width="50px"
-      />
-      <h3 class="my-auto text-light m-3 text-center">99999 Drinks consumed</h3>
-      <img
-        src="{{ url_for('static', filename='media/icons/037-mug.svg') }}"
-        alt="Beer Buddy"
-        width="50px"
-      />
-    </div>
     {% block content %}
-    <div class="container">
+    <div class="container mt-5">
       <div class="card card-game shadow-sm rounded mx-auto mt-3">
         <div class="card-body">
           <div class="container-fluid mb-5">

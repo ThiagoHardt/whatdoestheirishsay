@@ -1,33 +1,49 @@
 {% extends 'index.html' %} {% block content %}
 
-    <div class="container">
-      <div class="card card-game shadow-sm rounded mx-auto mt-3">
-        <div class="card-body">
-          <div class="container-fluid mb-5">
-            <h2 class="display-5 text-center mb-5 header-bg rounded text-light ld-who">
-                <img src="/static/media/icons/008-st-patrick.svg" alt="Hat full of gold" height="50px" width="50px">
-                Rules
-                <img src="/static/media/icons/014-cross.svg" alt="medal" height="50px" width="50px">
-            </h2>
-          </div>
-            <div class="row mt-3 mb-2 text-center">
-                <div>
-                    <ul class="bullet-point-center">
-                        <li>Challange yourself to score as many points as you can!</li>
-                        <li>Become the most Irish out of your friends with the highest score (or most drunk!)</li>
-                        <li>10 Seconds per question, so keep calm and stay lucky!</li>
-                        <li>Every third round, you and all your friends have to drink anyway, go paddy!</li>
-                        <li>Most important rule of all, is to <strong>HAVE FUN!</strong></li>
-                    </ul>
-                </div>
-                <div class="col text-center">
-                <a href="{{ url_for('play') }}" class="btn btn-large btn-success">
-                    Alright, I'm ready to become IRISH!
-                </a>
-            </div>
-          </div>
+<div class="container mt-5">
+  <div class="card card-game shadow-sm rounded mx-auto mt-3">
+    <div class="card-body">
+      <div class="container-fluid mb-5 text-center">
+        <img
+          src="/static/media/icons/008-st-patrick.svg"
+          alt="Hat full of gold"
+          height="50px"
+          width="50px"
+        />
+        <h2 class="display-3 mb-5 ld-who d-inline align-middle">Rules</h2>
+        <img
+          src="/static/media/icons/014-cross.svg"
+          alt="medal"
+          height="50px"
+          width="50px"
+        />
+      </div>
+      <div class="row mt-3 mb-2 text-center">
+        <div>
+          <ul class="bullet-point-center">
+            <li>Challange yourself to score as many points as you can!</li>
+            <li>
+              Become the most Irish out of your friends with the highest score
+              (or most drunk!)
+            </li>
+            <li>10 Seconds per question, so keep calm and stay lucky!</li>
+            <li>
+              Every third round, you and all your friends have to drink anyway,
+              go paddy!
+            </li>
+            <li>
+              Most important rule of all, is to <strong>HAVE FUN!</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <a href="{{ url_for('play') }}" class="btn btn-large btn-success">
+            Alright, I'm ready to become IRISH!
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    {%endblock%}
+{%endblock%}
