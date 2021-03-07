@@ -28,7 +28,6 @@ a {
 .header-title {
     color: #FFF;
     margin: 0;
-    /*--font weight property here to make title stand out, h1 tags too big.--*/
 }
 
 .img-title-alignment {
@@ -96,6 +95,21 @@ a {
 
 .hide {
     display: none;
+}
+
+.btn-success {
+    background-color: #148474;
+    border-color: #148474;
+}
+
+.btn-warning {
+    background-color: #FFDA1F;
+    border-color: #FFDA1F;
+}
+
+.btn-danger {
+    background-color: #e4592f;
+    border-color: #e4592f;
 }
 
 /*-------------------Footer-------------------*/
