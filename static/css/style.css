@@ -1,9 +1,8 @@
-/*-------------------Need font family and weights-------------------*/
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #FFF;
 }
 
 #wrong, #right {
@@ -15,7 +14,7 @@ body {
 /*-------------------Header-------------------*/
 
 .header-bg {
-    background-color: #283618;
+    background-color: #148474;
 }
 
 .header-title {
