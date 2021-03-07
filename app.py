@@ -50,15 +50,10 @@ def rules():
     return render_template("rules.html")
 
 
-@ app.route("/leaderboard")
-def leaderboard():
-    return render_template("leaderboard.html")
-  
-
 @ app.route("/about")
 def about():
     return render_template("about.html")
-  
+
 
 def getRandomWordsList():
     """ returns a list of random words from the words.txt file """
@@ -90,4 +85,4 @@ def translate_text(target, text):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
