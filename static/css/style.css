@@ -60,6 +60,14 @@ body {
     padding-bottom: 45px;
 }
 
+/*-----------------About Page-------------*/
+.box {
+    list-style-type: none;
+}
+.large {
+    font-size: 40px;
+}
+
 /*-------------------Rules Page-------------------*/
 
 .bullet-point-center {
@@ -69,7 +77,6 @@ body {
 .bullet-point-center li {
     padding-bottom: 10px;
 }
-
 /*-------------------Custom Button Props.-------------------*/
 
 .btn-extra-large {
@@ -99,7 +106,12 @@ footer a:hover {
     color: #DDA15E;
 }
 
+.credits {
+    float: right;
+}
+
 .footer-size {
     padding: 10px;
     text-align: center;
 }
+
