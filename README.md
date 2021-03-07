@@ -1,7 +1,7 @@
 # What does the Irish say?
 
 
-![Website](https://img.shields.io/website?style=for-the-badge&url=) ![GitHub last commit](https://img.shields.io/github/last-commit/thiagohardt/whatdoestheirishsay?style=for-the-badge) ![enter image description here](https://img.shields.io/github/languages/count/thiagohardt/whatdoestheirishsay?style=for-the-badge)
+![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fwdtis.herokuapp.com%2F) ![GitHub last commit](https://img.shields.io/github/last-commit/thiagohardt/whatdoestheirishsay?style=for-the-badge) ![enter image description here](https://img.shields.io/github/languages/count/thiagohardt/whatdoestheirishsay?style=for-the-badge)
 
 ___
 ## Table of Contents
