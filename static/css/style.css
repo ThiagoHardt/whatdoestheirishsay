@@ -4,10 +4,12 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
 
 #wrong, #right {
     font-size: 3rem;
     font-weight: bold;
+}
 
 
 /*-------------------Header-------------------*/
