@@ -26,6 +26,10 @@ def index():
 
 @app.route("/play")
 def play():
+    """ 
+        Play route, sets target language, random list of words, and the answer. 
+        Returns word list and translated word dict 
+    """
 
     targetLanguage = "ga"
     randomWordsList = getRandomWordsList()
@@ -36,6 +40,11 @@ def play():
     return render_template("game_page.html", translatedWord=translatedWord, randomWordsList=randomWordsList)
 
 
+@ app.route("/gameover")
+def gameover():
+    return render_template("game_over.html")
+
+
 @ app.route("/rules")
 def rules():
     return render_template("rules.html")
@@ -44,12 +53,15 @@ def rules():
 @ app.route("/leaderboard")
 def leaderboard():
     return render_template("leaderboard.html")
+  
 
 @ app.route("/about")
 def about():
     return render_template("about.html")
+  
 
 def getRandomWordsList():
+    """ returns a list of random words from the words.txt file """
 
     randomWordsList = []
     while len(randomWordsList) < 4:
@@ -60,6 +72,7 @@ def getRandomWordsList():
 
 
 def translate_text(target, text):
+    """ returns a translated word dict. target = target language, text = word to be translated """
 
     translate_client = translate.Client()
 

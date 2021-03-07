@@ -1,6 +1,15 @@
 /*-------------------Need font family and weights-------------------*/
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
+#wrong, #right {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
 
 /*-------------------Header-------------------*/
@@ -58,6 +67,16 @@
 .large {
     font-size: 40px;
 }
+
+/*-------------------Rules Page-------------------*/
+
+.bullet-point-center {
+    list-style-position: inside;
+}
+
+.bullet-point-center li {
+    padding-bottom: 10px;
+}
 /*-------------------Custom Button Props.-------------------*/
 
 .btn-extra-large {
@@ -74,14 +93,25 @@
 
 /*-------------------Footer-------------------*/
 
-.footer-size {
-    padding: 10px;
+footer {
+    margin-top: auto;
 }
 
-.copyright {
-    float: left;
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer a:hover {
+    color: #DDA15E;
 }
 
 .credits {
     float: right;
 }
+
+.footer-size {
+    padding: 10px;
+    text-align: center;
+}
+
