@@ -54,6 +54,10 @@ def rules():
 def leaderboard():
     return render_template("leaderboard.html")
 
+@ app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 def getRandomWordsList():
     """ returns a list of random words from the words.txt file """
