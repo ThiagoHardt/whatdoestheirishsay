@@ -54,6 +54,16 @@
     padding-bottom: 45px;
 }
 
+/*-------------------Rules Page-------------------*/
+
+.bullet-point-center {
+    list-style-position: inside;
+}
+
+.bullet-point-center li {
+    padding-bottom: 10px;
+}
+
 /*-------------------Custom Button Props.-------------------*/
 
 .btn-extra-large {
