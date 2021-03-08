@@ -34,7 +34,7 @@ const checkWord = (word, translatedWord) => {
     rightGuessesLS();
     setTimeout(() => {
       window.location.pathname = "/play";
-    }, 3000);
+    }, 1800);
   } else {
     //if wrong answer
     // hide all text and show a drink svg with a loser message
@@ -45,7 +45,7 @@ const checkWord = (word, translatedWord) => {
     wrongGuessesLS();
     setTimeout(() => {
       window.location.pathname = "/play";
-    }, 3000);
+    }, 1800);
   }
   const counter = incrementCounterLS();
   checkCounter(counter);
@@ -134,7 +134,7 @@ const checkCounter = (value) => {
   if (value >= numberOfGuesses) {
     setTimeout(() => {
       window.location.pathname = "/gameover";
-    }, 3000);
+    }, 1800);
   }
 };
 
