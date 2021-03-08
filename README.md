@@ -1,5 +1,6 @@
 # What does the Irish say?
 
+![What does the Irish say Mockup](static/media/mockup/mockup.PNG)
 
 ![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fwdtis.herokuapp.com%2F) ![GitHub last commit](https://img.shields.io/github/last-commit/thiagohardt/whatdoestheirishsay?style=for-the-badge) ![enter image description here](https://img.shields.io/github/languages/count/thiagohardt/whatdoestheirishsay?style=for-the-badge)
 
@@ -12,12 +13,19 @@ ___
     3. [Development Planes](#Development-Planes)
     4. [Design](#Design)
 3. [MVP](#MVP)
-4. Issues and Bugs
-5. Technologies Used
-6. Testing
-7. Deployment
-8. Credits
-9. Acknowledgements
+4. [Technologies Used](#Technologies-Used)
+5. [Testing](#Testing)
+6. [Deployment](#Deployment)
+7. [Credits](#Credits)
+
+___
+## Introduction
+
+This abstract web-based game was designed for the purpose of celebrating St. Patrick's day in a fun and friendly manner, can be played solo or with friends!
+
+The focus of this site is to give the users some fun bite-sized Irish words that they have to guess correctly, if they fail, they must drink up like a true Irishman.
+
+This allows the users to both have great fun, but also to educate players on old Irish languages, whilst sticking with the theme of St. Patrick's!
 
 ___
 ## UX
@@ -94,42 +102,40 @@ A scope was defined in order to clearly identify what needed to be done in order
     - Generative Irish Card questions and options
     - Database for Leaderboards
 
-#### Structure
-xxxxxxxxxxxxxxxxxxx PLACEHOLDER/Will need simple guide map of where buttons will take users xxxxxxxxxxxxxxxxxxx
-
 #### Skeleton
-Wireframe and prototype mockups were created in a [Figma Workspace](https://www.figma.com/file/cupQQiCICQGkyehHDUXxCx/What-does-the-Irish-say?node-id=0%3A1) with providing a positive user experience in mind:
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx NEEDS LINKING IMAGES THROUGH STATIC FOLDER xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Wireframe and prototype mockups were created in a [Figma Workspace](https://www.figma.com/file/cupQQiCICQGkyehHDUXxCx/What-does-the-Irish-say?node-id=0%3A1) Balsamiq and with providing a positive user experience in mind:
 
 Home Page:
-![Home Page Wireframe]
+
+![Home Page Wireframe](static/media/wireframes/home.PNG)
 
 Rules Page:
-![Rules Page Wireframe]
 
-Gameplay Page:
-![Gameplay Page Wireframe]
+![Rules Page Wireframe](static/media/wireframes/rules.PNG)
+
+Gameplay Pages:
+
+![Gameplay Page Wireframe](static/media/wireframes/gameplay.PNG)
 
 Leaderboard Page:
-![Leaderboard Page Wireframe]
+
+![Leaderboard Page Wireframe](static/media/wireframes/leaderboard.PNG)
 
 ### Design
 
 #### Color Scheme
 The main colours used throughout the website are a mixture of Irish greens, with hints of orange.
-![2Iaxbn.md.png](https://iili.io/2Iaxbn.md.png)<br>
-The chosen colour scheme is a reflection of the Irish Culture and St. Patrick's day.
 
-#### Typography
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
+[Colour Scheme](static/media/color-scheme/color-scheme.png) <br>
+
+The chosen colour scheme is a reflection of the Irish Culture and St. Patrick's day.
 
 #### Imagery
 The selected imagery is abstract and aesthetic, reflecting the Irish culture. 
 
 The imagery is catching and visually represents the theme of the St. Patrick's day.
 
-placeholder xxxxxxxxxxxxxxxxxxx placeholder   Mention the SVG packages and link.
+[SVG Images](https://www.flaticon.com/packs/st-patricks-day-7?k=1614892532205)
 
 ___
 ## MVP
@@ -150,10 +156,6 @@ Each page of the website features a consistent responsive navigational system:
 - Multiplayer Mode
     - Local Party 
     - Online
-
-___
-## Issues and Bugs
-PLACEHOLDER xxxxxxxxxxxxxxxxxxx PLACEHOLDER
 
 ___
 ## Technologies Used
@@ -184,11 +186,6 @@ The project was tested in the following way:
   Finally, I selected the about section and tested the navigation icons to the repository and social media: Github, Linkedin.
   
 I also took the chance to repeat all the above mentioned processes on different devices ( Smartphone, Chromebook and PC ) and several browsers, such as: Mozzila Firefox, Internet Explorer, Chrome and Opera.
-
-
-### Known Issues
-
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
 
 ___
 ## Deployment
@@ -236,16 +233,8 @@ If you want to fork the repository to your own GitHub account you can by clickin
 ___
 ## Credits
 
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
+Thiago Hardt - [LinkedIn](https://www.linkedin.com/in/thiago-hardt/)
 
-### Content
+Aidan Walsh - [LinkedIn](https://www.linkedin.com/in/aidancgart/)
 
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
-
-### Media
-
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
-
-___
-## Acknowledgements
-placeholder xxxxxxxxxxxxxxxxxxx placeholder
+Jakub Ostaszewski - [LinkedIn](https://www.linkedin.com/in/jakub-ostaszewski-22403a164/)
