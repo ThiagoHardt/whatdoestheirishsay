@@ -201,11 +201,12 @@ Everything is deployed from the master branch and updates automatically whenever
 6.  If everything works fine you should see the overview page of your app.
 7.  Click on Settings tab.
 8.  Reveal Config vars.
-9.  Here we configure the IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY values (thoose are  not public and are the same values on my env.py file(which is also private)).
-10. Click on deploy tab.
-11. In the case of this project I chose to conect my app to my repository in GitHub, so it auto updates my heroku app whenever the project is pushed. 
-12. Click on the Deploy Branch button. 
-13. DONE!
+9.  Here we configure the IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY, GOOGLE_APPLICATION_CREDENTIALS (set to google-credentials.json) and GOOGLE_CREDENTIALS (should match your google-credentials.json)values (thoose are  not public and are the same values on my env.py and file (which is also private)).
+10. On the builkdpacks area click add buildpack and paste (https://github.com/buyersight/heroku-google-application-credentials-buildpack.git)
+11. Click on deploy tab.
+12. In the case of this project I chose to conect my app to my repository in GitHub, so it auto updates my heroku app whenever the project is pushed. 
+13. Click on the Deploy Branch button. 
+14. DONE!
 
 ### Forking
 If you want to fork the repository to your own GitHub account you can by clicking on the “fork” button under the navbar with your profile.
@@ -221,6 +222,8 @@ If you want to fork the repository to your own GitHub account you can by clickin
  6. Press enter and you should have your local file cloned and ready.
  7. After opening the folder you should create a new file in the root directory, name it env.py
  8. In env.py you can set your environment variables.  
+ 9. Create a file called google-credentials.json on the project root and paste your google credentials into it. For more information checkout [Google Credentials](https://console.cloud.google.com/apis/credentials)
+ 10. 
     ``` import os
       import os
 
