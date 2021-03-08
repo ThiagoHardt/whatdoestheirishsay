@@ -224,7 +224,7 @@ If you want to fork the repository to your own GitHub account you can by clickin
  8. In env.py you can set your environment variables.  
  9. Create a file called google-credentials.json on the project root and paste your google credentials into it. For more information checkout [Google Credentials](https://console.cloud.google.com/apis/credentials)
  10. 
-    ``` import os
+    ``` 
       import os
 
       os.environ.setdefault("IP", "<your value>")
